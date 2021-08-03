@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: rnikkamdjangoapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: ravinikkam.eu-gb.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: rnikkamdjangoapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: ravinikkam.eu-gb.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
